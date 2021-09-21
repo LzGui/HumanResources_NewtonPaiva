@@ -1,0 +1,35 @@
+### GET
+Send Request
+GET http://localhost:8080/users
+
+### GET with invalid invalid
+Send Request
+GET http://localhost:8080/users/1
+
+### POST new User
+Send Request
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Gui Pimentel",
+    "password": "123456",
+    "email": "lzguilhermecp@gmail.com",
+    "mobile": "+55.31.991558248"
+}
+
+### PUT update User 
+Send Request
+PUT http://localhost:8080/users/1
+Content-Type:  application/json
+
+{
+    "name": "Gui Costa",
+    "password": "1234567",
+    "email": "lzguilhermecp@gmail.com",
+    "mobile": "+55.31.991558248"
+}
+
+### DELETE 
+Send Request
+DELETE http://localhost:8080/users/1
